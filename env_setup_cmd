@@ -111,4 +111,46 @@ java -cp . ece1779.loadgenerator.LoadGenerator server_ip_address port userid
 password
 java -cp . ece1779.loadgenerator.LoadGenerator ece1779lb-195803272.us-east-1.elb.amazonaws.com 80 test 123
 
+************************
+*         Anaconda     *
+************************
+Download from the web
+
+# Managing package
+conda install numpy(package_names)
+conda remove package_name
+conda update package_name/--all
+
+# list all package
+conda list
+
+# search a package
+conda search *search_term*
+
+# Managing environments
+conda create -n env_name (list of packages)
+conda activate my_env
+source deactivate
+
+# Saving and loading the envs
+conda env export > env.yaml
+
+# create env from file
+conda env create -f environment.yaml
+
+# list all envs
+conda env list
+
+************************
+*         Jupyter NB   *
+************************
+# install
+conda install jupyter notebook
+
+# lunch
+jupyter notebook
+
+# enable conda in NB
+conda install nb_conda
+
 
